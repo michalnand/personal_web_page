@@ -297,11 +297,11 @@ export default function HomePage() {
         <div className="max-w-md mx-auto space-y-3">
           <h2 className="text-2xl font-bold text-white">Get in touch</h2>
           <p className="text-sm text-gray-400">Feel free to drop a line regarding hardware design or algorithm development.</p>
-        </div>
+        </div>  
         
         {/* Swapped out Google Scholar for GitHub Code Rank Link */}
         <div className="flex justify-center items-center gap-6 text-sm text-gray-400 font-mono">
-          <a href="mailto:your.email@example.com" className="hover:text-[#104E8B] transition-colors">Email</a>
+          <a href="mailto:michal.chovanec.phd@gmail.com" className="hover:text-[#104E8B] transition-colors">Email</a>
           <span className="text-gray-700">•</span>
           <a href="https://github.com/michalnand" target="_blank" className="hover:text-[#104E8B] transition-colors">GitHub</a>
           <span class="text-gray-700">•</span>

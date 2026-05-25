@@ -19,7 +19,18 @@ export default function RLExplorationProject() {
         <h1 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
           Self-Supervised Network Distillation: An effective approach to exploration in sparse reward environments
         </h1>
-        <p className="text-lg text-gray-400 italic">
+        
+        {/* Authors Section */}
+        <div className="flex flex-wrap items-center gap-x-3 gap-y-2 pt-1">
+          <p className="text-sm text-gray-400 font-medium">
+            Matej Pecháč*, <span className="text-white font-semibold">Michal Chovanec*</span>, Igor Farkaš
+          </p>
+          <span className="text-[10px] px-2 py-0.5 rounded bg-[#1F2026] border border-[#1F2026] font-mono text-gray-400">
+            * Denotes Equal Contribution
+          </span>
+        </div>
+
+        <p className="text-lg text-gray-400 italic pt-2">
           "Generalizing Random Network Distillation (RND) by leveraging contrastive and non-contrastive self-supervised learning algorithms to stabilize novelty metrics."
         </p>
       </header>
@@ -28,7 +39,7 @@ export default function RLExplorationProject() {
       <section className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="p-4 rounded-xl bg-[#16161A] border border-[#1F2026]">
           <div className="text-xs font-mono text-gray-500 uppercase">Core Challenge</div>
-          <div className="text-sm font-semibold text-amber-400 mt-1">Reward Sparsity (1:1000)</div>
+          <div className="text-sm font-semibold text-amber-400 mt-1">Reward Sparsity - informed exploration</div>
         </div>
         <div className="p-4 rounded-xl bg-[#16161A] border border-[#1F2026]">
           <div className="text-xs font-mono text-gray-500 uppercase">Sample Efficiency</div>

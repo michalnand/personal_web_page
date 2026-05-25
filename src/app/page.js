@@ -103,12 +103,12 @@ export default function HomePage() {
               </div>
               
               <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
-                Self-Supervised Network Distillation (SND)
+                Self-Supervised Network Distillation (SND) - A Novel Intrinsic Motivation Algorithm for Sparse Reward Environments
               </h3>
               
               <div className="space-y-2">
                 <p className="text-xs font-mono text-amber-400 bg-amber-500/5 border border-amber-500/10 rounded-lg px-2.5 py-1.5 inline-block">
-                  <span className="font-bold">⚠️ Challenge:</span> Reward Sparsity (1:1000 ratio) & Horizon Horizons
+                  <span className="font-bold">Challenge:</span> Reward Sparsity
                 </p>
                 <p className="text-sm text-gray-400 leading-relaxed">
                   Eliminated the intrinsic-reward vanishing problem typical of frozen target frameworks. Developed a dynamic pipeline that continuously updates the target model via contrastive and non-contrastive representation learning, stabilizing agent novelty metrics across 128M interaction samples.

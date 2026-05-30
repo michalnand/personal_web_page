@@ -87,7 +87,8 @@ export default function HomePage() {
       {/* Featured Projects Section */}
       <section id="projects" className="scroll-mt-24 space-y-8">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tight text-white">Featured Projects</h2>
+          
+          <h2 className="text-3xl font-bold tracking-tight text-white"><span className="text-amber-400 font-mono text-base font-normal">[02]</span>Featured Projects</h2>
           <p className="text-gray-400">Click a card to read the full case study, architecture diagrams, and system performance.</p>
         </div>
 
@@ -115,6 +116,15 @@ export default function HomePage() {
                 </p>
               </div>
             </div>
+
+            {/* Atari Thumbnail */}
+            <div className="relative w-full h-full mt-2 rounded-lg bg-[#0F0F11] border border-[#1F2026] overflow-hidden opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-1">
+              <img 
+                src="/diagrams/montezuma.png" 
+                alt="Montezuma revenge"   
+                className="w-full h-full object-cover rounded"
+              />
+            </div>
             
             {/* Color-Coded Technology Badges */}
             <div className="mt-6 flex flex-wrap gap-2 pt-4 border-t border-[#1F2026]/50 text-xs font-mono text-gray-400">
@@ -141,6 +151,15 @@ export default function HomePage() {
                 A 3-time consecutive gold medal winning vehicle built from scratch. Overthrows traditional PID limits using Sparse Regression (SR3) System ID, Steady-State Kalman filtering, Koopman Operator state lifting, and custom-wound BLDC FOC motors running on bare-metal C++ templates.
               </p>
             </div>
+
+            {/* Robot Thumbnail */}
+            <div className="relative w-full h-80 mt-2 rounded-lg bg-[#0F0F11] border border-[#1F2026] overflow-hidden opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-1">
+              <img 
+                src="/robotics/DSC05550.jpg" 
+                alt="Robot photo" 
+                className="w-full h-full object-cover rounded"
+              />
+            </div>
             
             <div className="mt-6 flex flex-wrap gap-2 pt-4 border-t border-[#1F2026]/50 text-xs font-mono text-gray-400">
               <span className="px-2.5 py-1 rounded bg-[#1F2026] text-blue-400">C++ Templates</span>
@@ -150,6 +169,45 @@ export default function HomePage() {
             </div>
           </Link>
 
+        {/* Project 3 Link: Vehicles Detection & Classification */}
+        <Link href="/projects/vehicle-detection" className="group flex flex-col justify-between p-6 rounded-xl bg-[#16161A]/50 border border-[#1F2026] hover:border-[#104E8B]/60 transition-all duration-300 relative overflow-hidden">
+          
+          {/* Engineering Accent Badge */}
+          <div className="absolute top-0 right-0 transform translate-x-8 translate-y-5 rotate-45 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[9px] font-mono font-bold px-8 py-1 uppercase tracking-wider hidden sm:block">
+            Edge AI
+          </div>
+
+          <div className="space-y-4">
+            <span className="text-xs font-mono text-blue-400 tracking-widest uppercase">Embedded ML / Signal Processing</span>
+            <h3 className="text-xl font-semibold text-white group-hover:text-blue-400 transition-colors">
+              3-Axis Magnetometer Vehicle Intelligence Pipeline
+            </h3>
+            
+            <p className="text-sm text-gray-400 leading-relaxed">
+              A decoupled edge computing pipeline that flags and categorizes multi-class vehicle signatures using MEMS magnetic flux anomalies. Splits tasks between an ultra-lean 32-unit GRU stream detector running on a 120MHz ARM Cortex-M4 and a wide-context 4-layer 1D-CNN classifier activated per vehicle event.
+            </p>
+
+            {/* Waveform Thumbnail Feature */}
+            <div className="relative w-full h-24 mt-2 rounded-lg bg-[#0F0F11] border border-[#1F2026] overflow-hidden opacity-80 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center p-1">
+              <img 
+                src="/vehicle_detector/wave_detail.png" 
+                alt="Magnetic flux vehicle signature event waveform detail" 
+                className="w-full h-full object-cover rounded"
+              />
+            </div>
+          </div>
+          
+          <div className="mt-6 flex flex-wrap gap-2 pt-4 border-t border-[#1F2026]/50 text-xs font-mono text-gray-400">
+            <span className="px-2.5 py-1 rounded bg-[#1F2026] text-amber-400">TinyGRU RNN</span>
+            <span className="px-2.5 py-1 rounded bg-[#1F2026] text-blue-400">1D-CNN</span>
+            <span className="px-2.5 py-1 rounded bg-[#1F2026] text-emerald-400">Cortex-M4 Edge</span>
+            <span className="px-2.5 py-1 rounded bg-[#1F2026] text-purple-400">Data Augmentation</span>
+            <span className="px-2.5 py-1 rounded bg-[#1F2026] text-red-400">Edge AI</span>
+          </div>
+        </Link>
+
+          
+
           
         </div>
       </section>
@@ -157,7 +215,7 @@ export default function HomePage() {
      {/* Publications Section */}
       <section id="publications" className="scroll-mt-24 space-y-8">
         <div className="space-y-2">
-          <h2 className="text-3xl font-bold tracking-tight text-white">Publications</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-white"><span className="text-amber-400 font-mono text-base font-normal">[03]</span>Publications</h2>
           <p className="text-gray-400">Peer-reviewed journal papers and conference proceedings.</p>
         </div>
 
@@ -235,7 +293,7 @@ export default function HomePage() {
       {/* Photography Section */}
       <section id="photography" className="scroll-mt-24 space-y-8">
         <div className="space-y-3">
-          <h2 className="text-3xl font-bold tracking-tight text-white">Landscape Photography</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-white"><span className="text-amber-400 font-mono text-base font-normal">[04]</span>Landscape Photography</h2>
           <div className="text-gray-400 space-y-2 max-w-3xl leading-relaxed">
             <p>
               A look through my lens—captured moments away from the terminal. 

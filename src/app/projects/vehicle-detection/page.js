@@ -19,8 +19,6 @@ export default function VehicleDetectionProject() {
         <h1 className="text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
           Real-Time Vehicle Detection & Classification via 3-Axis MEMS Magnetometers
         </h1>
-        
-    
 
         <p className="text-lg text-gray-400 italic pt-2">
           "A decoupled edge-computing architecture deploying an ultra-lightweight RNN stream detector combined with an on-demand deep 1D-CNN classifier to overcome severe hardware latency and data imbalance."
@@ -57,6 +55,27 @@ export default function VehicleDetectionProject() {
           </p>
           <p>
             Once a signal matches, a fixed <strong>512-sample event frame window</strong> is captured, centered exactly around the detector's maximum absolute deviation point. Because a classification run happens strictly per vehicle pass, the remaining operational overhead can safely be handed off to a computationally heavier, wide-context <strong>4-layer 1D-CNN Classifier</strong> which can accurately isolate the target vehicle class.
+          </p>
+        </div>
+      </section>
+
+      {/* YOUTUBE EMBED SECTION */}
+      <section className="space-y-4">
+        <h2 className="text-xl font-bold text-white font-mono text-sm tracking-wide uppercase text-gray-400">
+          Project Demonstration & Real-Time Stream Evaluation
+        </h2>
+        <div className="w-full rounded-xl bg-[#16161A] border border-[#1F2026] overflow-hidden p-2 md:p-4">
+          <div className="relative w-full h-0 pb-[56.25%] rounded-lg overflow-hidden shadow-2xl">
+            <iframe 
+              className="absolute top-0 left-0 w-full h-full border-0"
+              src="https://www.youtube.com/embed/lrXLLpzbyVE" 
+              title="Real-Time Magnetic Vehicle Detection and Classification Pipeline Streamlit Demo"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowFullScreen
+            ></iframe>
+          </div>
+          <p className="text-center text-xs text-gray-500 italic mt-3 mb-1">
+            Video Showcase: Streamlit dashboard processing and segmenting multi-class telemetry variations in real time.
           </p>
         </div>
       </section>
@@ -208,7 +227,7 @@ export default function VehicleDetectionProject() {
         </ul>
       </section>
 
-    {/* CODE SOURCE & DEPLOYMENT INFRASTRUCTURE FOOTER */}
+      {/* CODE SOURCE & DEPLOYMENT INFRASTRUCTURE FOOTER */}
       <section className="p-6 rounded-xl bg-gradient-to-br from-[#16161A] to-[#0F0F11] border border-[#1F2026] flex flex-col sm:flex-row items-center justify-between gap-6">
         <a 
           href="https://github.com/michalnand/vehicles_detection" 
